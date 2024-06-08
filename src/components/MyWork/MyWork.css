@@ -17,13 +17,6 @@
     font-weight: 600;
 }
 
-.mywork-title img {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    z-index: -1;
-}
-
 .mywork-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -63,10 +56,11 @@
     transition: 0.6s;
 }
 
-@media(max-width: 768px) {
+@media(max-width: 480px) {
     .mywork {
-        gap: 50px;
-        margin: 50px 70px;
+        gap: 60px;
+        margin: 50px 0px;
+        padding: 0 40px;
         align-items: start;
     }
 
@@ -82,19 +76,20 @@
     }
 
     .mywork-container {
-        grid-template-columns: 1fr 1fr;
+        margin: auto;
+        grid-template-columns: 1fr;
         gap: 30px;
     }
 
     .mywork-container img {
-        width: 300px;
+        width: 380px;
         height: 100%;
     }
 
     .mywork-showmore {
         padding: 20px 40px ;
         font-size: 18px;
-        margin: 50px auto;
+        margin: 25px auto;
         cursor: pointer;
     }
 }

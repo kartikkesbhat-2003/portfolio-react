@@ -47,7 +47,7 @@ export const Contact = () => {
                 <div className="contact-details">
 
                     <div className="contact-detail">
-                        <img src={mail_icon} /> <p>KARTIKKESBHAT2003@GMAIL.COM</p>
+                        <img src={mail_icon} /> <p>kkesbhat1601@gmail.com</p>
                     </div>
 
                     <div className="contact-detail">
