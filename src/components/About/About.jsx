@@ -6,7 +6,7 @@ import profile_img from "../../assets/profile_img.svg"
 export const About = () => {
   return (
     <div id='about' className='about'>
-        <div className="about-title">
+       <div className="services-title">
             <h1>About me</h1>
         </div>
         <div className="about-sections">
@@ -20,16 +20,20 @@ export const About = () => {
                 </div>
                 <div className="about-skills">
                     <div className="about-skill">
-                        <p>HTML & CSS</p> <hr style={{width : "50%"}}/>
+                        <p>HTML & CSS</p> 
+                        <div><hr style={{width : "50%"}}/></div>
                     </div>
                     <div className="about-skill">
-                        <p>ReactJS</p> <hr style={{width : "70%"}}/>
+                        <p>ReactJS</p>
+                        <div><hr style={{width : "90%"}}/></div>
                     </div>
                     <div className="about-skill">
-                        <p>JavaScript</p> <hr style={{width : "60%"}}/>
+                        <p>JavaScript</p>
+                        <div><hr style={{width : "70%"}}/></div>
                     </div>
                     <div className="about-skill">
-                        <p>HTML & CSS</p> <hr style={{width : "50%"}}/>
+                        <p>HTML & CSS</p>
+                        <div><hr style={{width : "60%"}}/></div>
                     </div>
                 </div>
             </div>
@@ -47,7 +51,7 @@ export const About = () => {
             </div>
             <hr/>
             <div className="achievement">
-                <h1>15++</h1>
+                <h1>15+</h1>
                 <p>HAPPY CLIENTS</p>
             </div>
         </div>

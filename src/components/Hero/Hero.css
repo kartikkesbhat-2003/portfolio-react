@@ -1,111 +1,122 @@
-.hero {
+/* .hero {
     display: flex;
     align-items: center;
-    flex-direction: column;
-    gap: 35px;
-}
-
-.hero-profile-img {
-    border-radius: 50%;
-    margin-top: 100px;
-    width: 250px;
-    height: 250px;
-    overflow: hidden;
-}
-
-.hero-profile-img img {
-    width: 100%;
-    height: 100%;
-}
-
-.hero h1 {
+    justify-content: center;
+    min-height: 100vh;
+    color: #fff;
     text-align: center;
-    width: 70%;
-    font-size: 70px;
-    font-weight: 600;
+    padding: 20px;
+} */
+
+.hero {
+    max-width: 70%;
+    display: flex;
+    margin: 100px auto;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
-.hero h1 span {
+.hero-img img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+.hero-heading {
+    font-size: 3.5em;
+    max-width: 800px;
+    margin-bottom: 15px;
+}
+
+.hero-heading span {
     background: linear-gradient(to right, #5C258D 0%, #4389A2  51%, #5C258D  100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.hero p {
-    width: 50%;
-    text-align: center;
-    font-size: 24px ;
-    line-height: 40px;
+.hero-description {
+    font-size: 1.5em;
+    margin-bottom: 25px;
+    max-width: 800px;
 }
 
-.hero-action {
+.hero-buttons {
     display: flex;
-    align-items: center;
-    gap: 25px;
+    gap: 20px;
+}
+
+.btn {
+    border-radius: 50px;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;font-size: 1.2em;
     font-weight: 500;
-    font-size: 24px;
-    margin-bottom: 50px;
+    padding: 15px 30px;
 }
 
-.hero-connect {
-    padding: 25px 45px;
-    border-radius: 50px;
+.btn-primary {
     background: linear-gradient(to right, #5C258D 0%, #4389A2  51%, #5C258D  100%);
-    cursor: pointer;
+    transition: 0.5s;
 }
 
-.hero-resume {
-    padding: 25px 75px;
-    border-radius: 50px;
-    border: 2px solid #fff;
-    cursor: pointer;
-}
-
-.hero-connect:hover {
+.btn-primary:hover {
     border: 2px solid #fff;
 }
 
-.hero-resume:hover {
+.btn-secondary {
+    border: 2px solid white;
+}
+
+.btn-secondary:hover {
     border-color: #B415FF;
 }
 
-@media(max-width:768px) {
-    .hero-profile-img {
-        margin-top: 120px;
-        width: 200px;
-        height: 200px;
+
+@media(max-width:1024px) {
+    .hero {
+        max-width: 90%;
+        gap: 30px;
+        margin: 50px 0p;
+        padding: 0 20px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .hero-heading {
+        font-size: 3em;
     }
 
-    .hero h1 {
-        margin-top: 40px;
-        width: 90%;
-        font-size: 40px;
+    .hero-description {
+        font-size: 1.3em;
+        padding: 0 10px;
     }
 
-    .hero p {
-        width: 90%;
-        font-size: 18px;
-        line-height: 32px;
-        margin: 10px 0 ;
+    .hero-photo img {
+        width: 160px;
+        height: 160px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-heading {
+        font-size: 2.5em;
     }
 
-    .herro-action {
-        gap: 16px;
-        font-size: 18px;
-        font-weight: 500;
-        margin-bottom: 50px;
+    .hero-description {
+        font-size: 1.1em;
     }
 
-    .hero-connect {
-        padding: 10px 30px;
-        border-radius: 40px;
-        font-size: 20px;
+    .hero-photo img {
+        width: 140px;
+        height: 140px;
     }
 
-    .hero-resume {
-        padding: 10px 50px;
-        border-radius: 40px;
-        font-size: 20px;
+    .hero-buttons .btn {
+        font-size: 1em;
+        padding: 12px 25px;
     }
 }

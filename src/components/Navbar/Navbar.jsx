@@ -23,7 +23,7 @@ export const Navbar = () => {
   return (
     <div className="navbar">
 
-      <img src={logo} />
+      <img className="navbar-logo" src={logo} />
 
       <img src={menu_open} onClick={openMenu} className="nav-mob-open" />
 
@@ -100,7 +100,7 @@ export const Navbar = () => {
 
       <div className="nav-connect">
         <AnchorLink className="anchor-link" offset={50} href="#contact">
-          Connect with me
+          Connect me
         </AnchorLink>
       </div>
 

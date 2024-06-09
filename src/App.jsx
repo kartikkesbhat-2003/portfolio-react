@@ -15,8 +15,8 @@ export const App = () => {
       <About/>
       <Services/>
       <MyWork/>
-      <Contact/>
-      <Footer/>
+      {/* <Contact/>
+      <Footer/> */}
     </div>
   )
 }
