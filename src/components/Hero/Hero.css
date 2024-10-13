@@ -1,77 +1,68 @@
-/* .hero {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-} */
-
 .hero {
-    max-width: 70%;
+    max-width: 85%;
     display: flex;
-    margin: 100px auto;
+    margin: 50px auto;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    gap: 40px;
 }
 
-.hero-img img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    margin-bottom: 30px;
+.hero-title {
+    display: flex;
+    flex-direction: column;
 }
 
-.hero-heading {
-    font-size: 3.5em;
-    max-width: 800px;
-    margin-bottom: 15px;
+.hero-greeting {
+    font-size: 2.1rem;
+    font-weight: 700;
+    color: rgb(85, 251, 85);
 }
 
-.hero-heading span {
-    background: linear-gradient(to right, #5C258D 0%, #4389A2  51%, #5C258D  100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.hero-name {
+    font-size: 7em;
+    font-weight: 700;
+    line-height: 1;
 }
 
-.hero-description {
+.hero-subtitle {
+    font-size: 2.1em;
+    width: 70%;
+    font-weight: 700;
+    color: rgb(142, 142, 142);
+}
+
+.hero-subtitle span {
+    color: #ffffff;
+}
+
+.hero-specilization {
     font-size: 1.5em;
-    margin-bottom: 25px;
-    max-width: 800px;
+    font-weight: 400;
+    color: #ffffff;
 }
 
-.hero-buttons {
+.social-links {
     display: flex;
     gap: 20px;
 }
 
-.btn {
-    border-radius: 50px;
-    text-decoration: none;
-    color: #fff;
-    cursor: pointer;font-size: 1.2em;
-    font-weight: 500;
-    padding: 15px 30px;
+.social-button {
+    display: flex;
+    align-items: center;
+    background-color: #333333;
+    gap: 10px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.5s;
+    font-size: 1em;
+    font-weight: 300;
 }
 
-.btn-primary {
-    background: linear-gradient(to right, #5C258D 0%, #4389A2  51%, #5C258D  100%);
-    transition: 0.5s;
-}
-
-.btn-primary:hover {
-    border: 2px solid #fff;
-}
-
-.btn-secondary {
-    border: 2px solid white;
-}
-
-.btn-secondary:hover {
-    border-color: #B415FF;
+.social-icon {
+    font-size: 1.2em;
+    color: rgb(0, 255, 98);
 }
 
 
@@ -86,37 +77,48 @@
 
 
 @media (max-width: 768px) {
-    .hero-heading {
-        font-size: 3em;
+    .hero-name {
+        font-size: 4em;
     }
 
-    .hero-description {
-        font-size: 1.3em;
-        padding: 0 10px;
+    .hero-greeting {
+        font-size: 1.5em;
     }
 
-    .hero-photo img {
-        width: 160px;
-        height: 160px;
+    .hero-subtitle {
+        font-size: 1.2em;
+        width: 90%;
+        font-weight: 700;
+        color: rgb(142, 142, 142);
+    }
+
+    .hero-specilization {
+        font-size: 1em;
     }
 }
 
 @media (max-width: 480px) {
-    .hero-heading {
-        font-size: 2.5em;
+    .hero-name {
+        font-size: 4em;
     }
 
-    .hero-description {
-        font-size: 1.1em;
+    .hero-greeting {
+        font-size: 1.5em;
     }
 
-    .hero-photo img {
-        width: 140px;
-        height: 140px;
+    .hero-subtitle {
+        font-size: 1.5em;
+        width: 90%;
+        font-weight: 700;
+        color: rgb(142, 142, 142);
     }
 
-    .hero-buttons .btn {
+    .hero-specilization {
         font-size: 1em;
-        padding: 12px 25px;
+    }
+
+    .social-button {
+        padding: 5px 10px;
+        font-size: 0.8em;
     }
 }

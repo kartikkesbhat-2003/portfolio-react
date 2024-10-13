@@ -1,10 +1,8 @@
 import React, { useRef, useState } from "react";
 import "./Navbar.css";
-import logo from "../../assets/logo.svg";
-import underline from "../../assets/nav_underline.svg";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-import menu_open from "../../assets/menu_open.svg";
-import menu_close from "../../assets/menu_close.svg";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { IoClose } from "react-icons/io5";
 
 export const Navbar = () => {
   const [menu, setMenu] = useState("home");
@@ -23,13 +21,14 @@ export const Navbar = () => {
   return (
     <div className="navbar">
 
-      <img className="navbar-logo" src={logo} />
+      <div className="logo"><span>&#123;</span> k <span>&#125;</span></div>
 
-      <img src={menu_open} onClick={openMenu} className="nav-mob-open" />
+      <GiHamburgerMenu onClick={openMenu} className="nav-mob-open" />
 
       <ul ref={menuref} className="nav-menu">
 
-        <img onClick={closeMenu} src={menu_close} className="nav-mob-close" />
+        <img  />
+        <IoClose onClick={closeMenu} className="nav-mob-close" />
 
         <li>
           <AnchorLink className="anchor-link" offset={50} href="#home">
@@ -97,12 +96,6 @@ export const Navbar = () => {
         </li>
 
       </ul>
-
-      <div className="nav-connect">
-        <AnchorLink className="anchor-link" offset={50} href="#contact">
-          Connect me
-        </AnchorLink>
-      </div>
 
     </div>
   );
