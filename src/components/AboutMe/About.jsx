@@ -8,13 +8,13 @@ export const About = () => {
         <div className='about-content'>
             <h2 className='about-heading'>⚡ About Me</h2>
             <p className='about-paragraph'>
-                Hey! I'm Abdul Rahman, I've been close to a computer since an early age, and been passionate about it ever since.
+                Hey! I'm Kartik Kesbhat, but you can call me KK. My passion for technology began early, and I've been dedicated to coding and development ever since. 💻 Over the years, I've become skilled in various programming languages and technologies, with a strong focus on web 🌐 and mobile 📱 development.
             </p>
             <p className='about-paragraph'>
-                I really liked to build stuff using no-code tools back in 2010, and from that, I explored how to code myself, fast-forward to today, I do programming in various languages and technologies, and had the privilege to work in a Recruitment Company and a SaaS Company. I'm interested in building something awesome with code and automating tasks with code, currently focused on Web & Mobile Development, Open Source, and Competitive Programming.
+                Beyond coding, I'm an active member of the community. 🌟 I’ve led multiple initiatives at Prayas Youth Forum, where I take pride in organizing social activities that make a positive impact. My current interests are centered around web & mobile development, contributing to open-source projects 🌍, and tackling challenging problems in competitive programming. 🎯
             </p>
             <p className='about-paragraph'>
-                When I'm not coding I play games with my friends, watch some show on Netflix, or if the weather's good, play basketball! 🏀
+            When I'm not coding, you can find me gaming with friends 🎮, watching a show on Netflix 📺, or going for a relaxing walk to unwind. 🚶‍♂️
             </p>
         </div>
         <div className='about-image-container'>
@@ -24,3 +24,6 @@ export const About = () => {
 
   )
 }
+
+
+

@@ -1,0 +1,23 @@
+.community-section {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 85%; /* Ensure that the section doesn't stretch too wide */
+    margin: 100px auto;
+  }
+  
+  .community-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Align cards with equal space */
+    /* gap: 20px; */
+  }
+  
+
+
+  @media(max-width:1024px) {
+    .community-section {
+        max-width: 90%;
+    }
+}
+  

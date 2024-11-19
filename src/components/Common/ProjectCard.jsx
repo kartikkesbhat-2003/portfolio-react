@@ -2,7 +2,7 @@ import React from 'react';
 import './ProjectCard.css';
 import { FaExternalLinkAlt } from 'react-icons/fa';
 
-export const ProjectCard = ({ image, name, description, techStack }) => {
+export const ProjectCard = ({ image, name, description, techStack, demo }) => {
     return (
         <div className="project-card">
 
@@ -16,7 +16,7 @@ export const ProjectCard = ({ image, name, description, techStack }) => {
 
               <div className='project-title'>
                 <h2>{name}</h2>
-                <a href="#" className="external-link" target="_blank" rel="noopener noreferrer">
+                <a href={demo} className="external-link" target="_blank" rel="noopener noreferrer">
                   <FaExternalLinkAlt className='project-title' />
                 </a>
               </div>

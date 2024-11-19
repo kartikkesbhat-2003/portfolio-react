@@ -1,0 +1,27 @@
+.social-button {
+    display: flex;
+    align-items: center;
+    background-color: #333333;
+    gap: 10px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.5s;
+    font-size: 1em;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.social-icon {
+    font-size: 1.2em;
+    color: rgb(0, 255, 98);
+}
+
+@media (max-width: 480px) {
+    .social-button {
+        padding: 5px 10px;
+        font-size: 0.8em;
+    }
+}

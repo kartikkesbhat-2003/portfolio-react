@@ -17,6 +17,7 @@
     color: #eaeaea;
     font-family: 'Arial', sans-serif; /* Customize font */
     padding: 10px;
+    user-select: none;
   }
 
 .logo span {

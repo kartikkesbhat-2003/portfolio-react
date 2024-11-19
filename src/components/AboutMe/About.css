@@ -1,7 +1,8 @@
 .about {
     max-width: 85%;
     display: flex;
-    margin: 100px auto ;
+    margin: auto ;
+    margin-top: 100px;
     gap: 50px;
 }
 

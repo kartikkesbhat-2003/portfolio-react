@@ -1,35 +1,43 @@
 import React from 'react';
 import './Projects.css';
 import {ProjectCard} from '../Common/ProjectCard';
-import project_1 from '../../assets/projects/project_1.webp';
+import project_1 from '../../assets/projects/project_1.svg';
+import project_2 from '../../assets/projects/project_2.svg';
+import project_3 from '../../assets/projects/project_3.svg';
 
 export const Projects = () => {
-    const projects = [
-        {
-          image: project_1,
-          name: 'Creative@Home',
-          description: 'A website that provides roadmap for various fields in programming and helps people learn to code for free.',
-          techStack: ['React', 'JavaScript', 'Node', 'html', 'css' ],
-        },
-        {
-          image: project_1,
-          name: 'Opinometer',
-          description: 'A web app to analyze whether an opinion on a specific topic is positive or negative based on recent tweets using Natural Language Processing.',
-          techStack: ['React', 'Python', 'Chart.js'],
-        },
-        {
-          image: project_1,
-          name: 'Prayer Time API',
-          description: 'It\'s an easy-to-use API to get today\'s (and tomorrow\'s) prayer times in any city in the world, based on Muslim Pro.',
-          techStack: ['Python', 'Flask', 'BeautifulSoup'],
-        },
-        {
-          image: project_1,
-          name: 'Portfolio Website',
-          description: 'A personal portfolio website to showcase projects and skills.',
-          techStack: ['React', 'CSS'],
-        },
-      ];
+  const projects = [
+    {
+      image: project_1,
+      name: 'Personal Portfolio Website',
+      description: 'A portfolio website showcasing projects, skills, and experience.',
+      techStack: ['React', 'JavaScript', 'Node', 'HTML', 'CSS'],
+      demo: 'https://kkesbhat.netlify.app/',
+    },
+    {
+      image: project_2,
+      name: 'Mosam Check',
+      description: 'A weather app that shows current location weather and allows searching by place.',
+      techStack: ['HTML', 'CSS', 'JavaScript', 'API',],
+      demo: 'https://mosamcheck.netlify.app/',
+    },
+    {
+      image: project_3,
+      name: 'Enigma Key',
+      description: 'A strong password generator for creating secure passwords.',
+      techStack: ['HTML', 'CSS', 'JavaScript', 'API',],
+      demo: 'https://enigmakey.netlify.app/',
+    },
+    {
+      image: project_1,
+      name: 'StudyNotion',
+      description: 'An online platform for creating and enrolling in courses.',
+      techStack: ['React', 'JavaScript', 'Node', 'HTML', 'CSS'],
+      demo: 'https://studynotion.netlify.app/',
+    },
+  ];
+  
+  
     
       return (
         <section className="projects-section">
@@ -44,6 +52,7 @@ export const Projects = () => {
                 name={project.name}
                 description={project.description}
                 techStack={project.techStack}
+                demo={project.demo}
               />
             ))}
           </div>

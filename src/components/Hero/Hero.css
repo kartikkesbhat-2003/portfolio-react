@@ -1,8 +1,10 @@
 .hero {
     max-width: 85%;
+    height: calc(100vh - 80px);
     display: flex;
-    margin: 50px auto;
+    margin: auto;
     flex-direction: column;
+    justify-content: center;
     gap: 40px;
 }
 
@@ -43,26 +45,6 @@
 .social-links {
     display: flex;
     gap: 20px;
-}
-
-.social-button {
-    display: flex;
-    align-items: center;
-    background-color: #333333;
-    gap: 10px;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 15px;
-    color: white;
-    cursor: pointer;
-    transition: all 0.5s;
-    font-size: 1em;
-    font-weight: 300;
-}
-
-.social-icon {
-    font-size: 1.2em;
-    color: rgb(0, 255, 98);
 }
 
 
@@ -116,9 +98,6 @@
     .hero-specilization {
         font-size: 1em;
     }
-
-    .social-button {
-        padding: 5px 10px;
-        font-size: 0.8em;
-    }
 }
+
+
