@@ -1,4 +1,4 @@
-.community-section {
+  .community-section {
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -19,5 +19,4 @@
     .community-section {
         max-width: 90%;
     }
-}
-  
+  }

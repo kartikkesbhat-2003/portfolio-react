@@ -40,7 +40,7 @@ export const Projects = () => {
   
     
       return (
-        <section className="projects-section">
+        <section className="projects-section" id='work'>
           <h1>💻 All Creative Works.</h1>
           <p>Here's some of my projects that I have worked on.</p>
           <a href="#" className="explore-link">Explore more →</a>

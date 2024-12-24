@@ -7,8 +7,10 @@ import { About } from './components/AboutMe/About'
 import { Projects } from './components/Projects/Projects'
 import { Skills } from './components/Skills/Skills'
 import { Community } from './components/Community/Community'
-// import { Contact } from './components/Contact/Contact'
-// import { Experience } from './components/Experience/Experience'
+import { Links } from './components/Links/Links'
+import { Contact } from './components/ContactMe/ContactMe'
+import { Education } from './components/Education/Educatcion'
+import { Experience } from './components/Experience/Experience'
 
 export const App = () => {
   return (
@@ -17,11 +19,13 @@ export const App = () => {
         <Navbar/>
         <Hero />
         <About />
-        <Projects />
+        <Education />
+        <Experience />
         <Skills />
+        <Projects />
         <Community />
-        {/* <Experience /> */}
-        {/* <Contact /> */}
+        <Links />
+        <Contact />
       </div>
   )
 }

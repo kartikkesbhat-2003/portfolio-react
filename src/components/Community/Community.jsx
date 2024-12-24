@@ -11,28 +11,30 @@ const communityData = [
     communityName: 'Prayas Youth Forum & Social Awareness Foundation, Pune',
     role: 'Social Media Head',
     duration: '2015 - Present',
-    description: 'A non-profit organization working for the upliftment of the underprivileged.'
+    description: 'A non-profit empowering underprivileged communities through impactful initiatives.'
   },
   {
     logo: gdsc_logo,
     communityName: 'Google Developer Student Clubs SCOE',
     role: 'Graphics Designer',
     duration: '2019 - Present',
-    description: 'A platform for innovation and technology-driven solutions for the community.'
+    description: 'A platform fostering innovation and problem-solving using technology.'
   },
   {
     logo: ecell_logo,
     communityName: 'E-Cell SCOE',
     role: 'Member',
     duration: '2018 - Present',
-    description: 'A professional organization for computing and technology students.'
+    description: 'An entrepreneurial cell promoting startup culture among students.'
   }
 ];
+
+
 
 export const Community = () => {
     return (
         <div className="community-section">
-          <h2 className="community-section-heading">Communities I Am Part Of 🌍</h2>
+          <h2 className="community-section-heading">🌍 Communities I Am Part Of</h2>
           <div className="community-cards">
             {communityData.map((community, index) => (
               <CommunityCard key={index} {...community} />

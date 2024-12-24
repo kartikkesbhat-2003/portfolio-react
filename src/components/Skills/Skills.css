@@ -11,7 +11,7 @@
 .skills-carousel {
   display: flex;
   flex-wrap: wrap;
-  justify-content: start;
+  justify-content: space-around;
   gap: 2rem;
   transition: transform 0.3s ease, gap 0.3s ease;
 }

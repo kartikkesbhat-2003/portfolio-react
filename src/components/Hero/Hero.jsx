@@ -8,7 +8,7 @@ import '../../../src/index.css'
 
 export const Hero = () => {
   return (
-    <header className="hero">
+    <header className="hero" id='home'>
 
         <div className='hero-title'>
             <p className='hero-greeting'>Hey there!, I'm-</p>

@@ -11,12 +11,16 @@
     transition: all 0.5s;
     font-size: 1em;
     font-weight: 300;
+}
+
+.social-button p {
     text-decoration: none;
+    text-underline-offset: none;
 }
 
 .social-icon {
     font-size: 1.2em;
-    color: rgb(0, 255, 98);
+    color: rgb(72, 255, 0);
 }
 
 @media (max-width: 480px) {
