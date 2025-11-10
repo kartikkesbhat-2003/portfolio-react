@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import emailjs from 'emailjs-com';
+import React from 'react';
 import './ContactMe.css';
 import { MdEmail, MdPhone, MdLocationOn } from 'react-icons/md'; 
 
@@ -28,7 +27,7 @@ export const Contact = () => {
 
   return (
     <>
-    <section className="contact-section">
+  <section className="contact-section" id='contact'>
       <div className="contact-container">
         <div className="contact-info">
           <h2>Get in touch</h2>
@@ -38,13 +37,13 @@ export const Contact = () => {
           </p>
           <ul>
             <li>
-              <MdEmail style={{ marginRight: "8px" }} /> kkesbhat1601@gmail.com
+              <MdEmail /> kkesbhat1601@gmail.com
             </li>
             <li>
-              <MdPhone style={{ marginRight: "8px" }} /> +91 8856987832
+              <MdPhone /> +91 8856987832
             </li>
             <li>
-              <MdLocationOn style={{ marginRight: "8px" }} /> Pune, India
+              <MdLocationOn /> Pune, India
             </li>
           </ul>
         </div>

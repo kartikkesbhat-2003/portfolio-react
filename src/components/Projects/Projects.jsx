@@ -4,6 +4,11 @@ import {ProjectCard} from '../Common/ProjectCard';
 import project_1 from '../../assets/projects/project_1.svg';
 import project_2 from '../../assets/projects/project_2.svg';
 import project_3 from '../../assets/projects/project_3.svg';
+import project_4 from '../../assets/projects/project_4.png';
+import project_5 from '../../assets/projects/project_5.png';
+import project_6 from '../../assets/projects/project_6.png';
+import project_7 from '../../assets/projects/project_7.png';
+import project_8 from '../../assets/projects/project_8.png';
 
 export const Projects = () => {
   const projects = [
@@ -13,6 +18,37 @@ export const Projects = () => {
       description: 'A portfolio website showcasing projects, skills, and experience.',
       techStack: ['React', 'JavaScript', 'Node', 'HTML', 'CSS'],
       demo: 'https://kkesbhat.netlify.app/',
+    },
+    {
+      image: project_4,
+      name: 'StudyNotion',
+      description: 'An online platform for creating and enrolling in courses.',
+      techStack: ['React', 'JavaScript', 'Node', 'HTML', 'CSS'],
+    },
+    {
+      image: project_5,
+      name: 'ReferMe',
+      description: 'A notes sharing platform for students to share and access study materials.',
+      techStack: ['React', 'JavaScript', 'Node', 'Express', 'MongoDB', 'Razorpay'],
+      demo: 'https://referme.tech/',
+    },
+    {
+      image: project_6,
+      name: 'Kronix',
+      description: 'Task management app to organize and prioritize tasks effectively.',
+      techStack: ['Next', 'TypeScript', 'Node', 'MongoDB', 'Tailwind CSS'],
+    },
+    {
+      image: project_7,
+      name: 'Grass Detection using ML',
+      description: 'A machine learning model to detect grass in images for agricultural applications.',
+      techStack: ['Python', 'Jupyter Notebook', 'Machine Learning', 'OpenCV', 'YOLOv8'],
+    },
+    {
+      image: project_8,
+      name: 'AI-Based Eye movement and pupil dialation detection',
+      description: 'A project to analyze eye movements and pupil dilation using AI techniques.',
+      techStack: ['Python', 'OpenCV', 'Machine Learning', 'Dlib', 'TensorFlow', 'PyTorch'],
     },
     {
       image: project_2,
@@ -28,22 +64,18 @@ export const Projects = () => {
       techStack: ['HTML', 'CSS', 'JavaScript', 'API',],
       demo: 'https://enigmakey.netlify.app/',
     },
-    {
-      image: project_1,
-      name: 'StudyNotion',
-      description: 'An online platform for creating and enrolling in courses.',
-      techStack: ['React', 'JavaScript', 'Node', 'HTML', 'CSS'],
-      demo: 'https://studynotion.netlify.app/',
-    },
   ];
   
   
     
       return (
         <section className="projects-section" id='work'>
-          <h1>💻 All Creative Works.</h1>
-          <p>Here's some of my projects that I have worked on.</p>
-          <a href="#" className="explore-link">Explore more →</a>
+          <div className='projects-header'>
+            <span className='eyebrow'>Selected Work</span>
+            <h1>All creative works</h1>
+            <p>Pairing pragmatic engineering with purposeful design across responsive web apps, internal tools, and community projects.</p>
+            <a href="https://github.com/kartikkesbhat-2003?tab=repositories" target="_blank" rel="noopener noreferrer" className="explore-link">Explore more →</a>
+          </div>
           <div className="projects">
             {projects.map((project, index) => (
               <ProjectCard

@@ -1,7 +1,5 @@
 import React from "react";
-import "./Links.css"; // Assuming external CSS for styling
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa"; // React Icons library
-import { SiCodechef, SiLeetcode } from "react-icons/si"; // Specific platform icons
+import "./Links.css";
 import codechefLogo from '../../assets/links/codechefLogo.svg';
 import codingninjasLogo from '../../assets/links/codingninjasLogo.svg';
 import leetcodeLogo from '../../assets/links/leetcodeLogo.svg';
@@ -20,13 +18,12 @@ export const Links = () => {
   ];
 
   return (
-    <section className="links-section" id="contact">
+  <section className="links-section" id="connect">
       <h1>🤝 Connect with Me</h1>
       <div className="links-container">
         {links.map((link, index) => (
-          <div className="link-item-container">
+          <div key={index} className="link-item-container">
             <a
-            key={index}
             href={link.url}
             target="_blank"
             rel="noopener noreferrer"

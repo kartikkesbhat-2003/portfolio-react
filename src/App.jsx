@@ -14,8 +14,7 @@ import { Experience } from './components/Experience/Experience'
 
 export const App = () => {
   return (
-      <div>
-        {/* Fixed Navbar */}
+      <div className='app-shell'>
         <Navbar/>
         <Hero />
         <About />

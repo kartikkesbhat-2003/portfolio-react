@@ -4,23 +4,34 @@ import './Experience.css'; // Add custom styling in this file
 export const Experience = () => {
   return (
     <section className="experience" id='experience-skills'>
-      <h2>💼 Experience</h2>
+      <div className='experience-header'>
+        <span className='eyebrow'>Career Journey</span>
+        <h2>Insightful roles that shaped my craft</h2>
+        <p>Designing and engineering experiences across startups and community-led teams with a focus on impact, performance, and meaningful collaboration.</p>
+      </div>
       <div className="experience-list">
         <div className="experience-item">
-          <div className='dot'></div>
-          <h3>Web Development Intern</h3>
-          <p className="company-name">DC Info Tech Pvt. Ltd.</p>
-          <p className="duration">October 2024 - Present</p>
+          <h3>Junior Software Developer</h3>
+          <p className="company-name">Supergensys Healthtech Pvt Ltd</p>
+          <p className="duration">July 2025 - Present</p>
           <ul>
-            <li>Worked on front-end development with HTML, CSS, and JavaScript.</li>
-            <li>Collaborated on the implementation of responsive web designs.</li>
-            <li>Contributed to improving UI/UX of client projects.</li>
-            <li>Utilized React.js for interactive web applications.</li>
+            <li>As a Junior Software Developer at Supergensys Healthtech, I contribute to the development of scalable, full-stack web applications focused on improving healthcare outcomes through technology.</li>
+            <li>My role involves collaborating with cross-functional teams to design, develop, and deploy innovative healthcare solutions.</li>
+          </ul>
+        </div>
+
+        <div className="experience-item">
+          <h3>Web Development Intern</h3>
+          <p className="company-name">RN Web Brand Solution</p>
+          <p className="duration">September 2023 - January 2024</p>
+          <ul>
+            <li>Built responsive UIs with React.js, creating 20+ reusable components, reducing development time by 30%.</li>
+            <li>Integrated third-party APIs and optimized state management, boosting responsiveness by 40% and cutting load times.</li>
+            <li>Transformed wireframes into features, collaborating cross-functionally to increase user engagement by 15%.</li>
           </ul>
         </div>
         
         <div className="experience-item">
-          <div className='dot'></div>
           <h3>Open Source Contributor</h3>
           <p className="company-name">GirlScript</p>
           <p className="duration">July 2024 - Present</p>

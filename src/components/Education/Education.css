@@ -1,90 +1,58 @@
 .education-section {
-  max-width: 85%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  gap: 1rem;
-  margin: auto;
-  margin-top: 100px;
-  }
-  
-  .section-title {
-    margin-bottom: 20px;
-  }
-  
-  .education-container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    max-width: 900px;
-  }
-  
-  .education-card {
-    position: relative;
-    padding: 20px;
-    text-align: left;
-    border-left: 2px dotted #ffffff;
-  }
-
-  .dot {
-    position: absolute;
-    height: 10px;
-    width: 10px;
-    background: #ffffff;
-    border-radius: 50px;
-    left: -6px;
-    top: -6px;
-  }
-  
-  .education-degree {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: rgb(72, 255, 0);
-    margin-bottom: 5px;
-  }
-  
-  .education-institution {
-    font-size: 1rem;
-    color: #a9a9a9;
-    margin-bottom: 5px;
-  }
-  
-  .education-year {
-    font-size: 0.9rem;
-    color: #777;
-    margin-bottom: 10px;
-  }
-
-  .education-score {
-  font-size: 0.9rem;
-  color: #7d7d7d;
-  margin: 5px 0;
-  font-weight: bold;
+  gap: 2.2rem;
 }
 
-  
-  .education-description {
-    font-size: 0.9rem;
-    color: #666;
-    line-height: 1.5;
+.section-title {
+  font-size: 2.2rem;
+}
+
+.education-container {
+  display: grid;
+  gap: 1.4rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.education-card {
+  padding: 1.9rem;
+  border-radius: var(--radius-lg);
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-glow);
+  box-shadow: var(--shadow-soft);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.education-degree {
+  font-size: 1.2rem;
+}
+
+.education-institution {
+  color: var(--text-secondary);
+  font-size: 0.98rem;
+}
+
+.education-year {
+  font-size: 0.9rem;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.education-score {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.education-description {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 520px) {
+  .section-title {
+    font-size: 2rem;
   }
-  
-  /* Responsive Design */
-  @media (min-width: 768px) {
-    .education-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
-  
-    .education-card {
-      flex: 0 0 48%;
-    }
-  }
-  
-  @media (min-width: 1024px) {
-    .education-card {
-      flex: 0 0 30%;
-    }
-  }
+}
   

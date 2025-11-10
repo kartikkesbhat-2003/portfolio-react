@@ -1,96 +1,75 @@
 .community-card {
-    display: flex;
-    flex-direction: row;
-    color: #f4f4f4;
-    border-radius: 8px;
-    background-color: rgb(23, 23, 23);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    padding: 20px;
-    gap: 20px;
-    margin-bottom: 20px;
-    transition: transform 0.2s ease, box-shadow 0.3s ease;
-    width: 45%;
-  }
-  
-  .community-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
-  }
-  
-  .community-logo {
-    width: 80px; /* Fixed width for the logo */
-    height: 80px;
-    border-radius: 50%;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1.5rem;
+    align-items: center;
+    padding: 1.8rem;
+    border-radius: var(--radius-lg);
+    background: var(--bg-elevated);
+    border: 1px solid var(--border-glow);
+    box-shadow: var(--shadow-soft);
+    transition: transform 0.2s ease, border 0.2s ease;
+}
+
+.community-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(255, 107, 61, 0.45);
+}
+
+.community-logo {
+    width: 70px;
+    height: 70px;
+    border-radius: 22px;
     overflow: hidden;
-    flex-shrink: 0; /* Ensure logo size remains fixed */
-  }
-  
-  .community-logo-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .community-info {
+    background: rgba(255, 255, 255, 0.05);
+    display: grid;
+    place-items: center;
+}
+
+.community-logo-img {
+    width: 75%;
+    height: 75%;
+    object-fit: contain;
+}
+
+.community-info {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    flex-grow: 1;
-  }
-  
-  .community-name {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #ffffff; /* Yellow color for the community name to make it stand out */
-    margin-bottom: 5px;
-  }
-  
-  .community-role {
-    font-size: 1rem;
-    color: #bbb; /* Light gray for role */
-    margin-bottom: 5px;
-  }
-  
-  .community-duration {
-    font-size: 0.9rem;
-    color: #888; /* Slightly lighter gray for duration */
-    margin-bottom: 15px;
-  }
-  
-  .community-description {
-    font-size: 1rem;
-    color: #ccc; /* Light gray for description */
-    line-height: 1.5;
-  }
-  
-  .community-description li {
-    margin-bottom: 5px;
-  }
+    gap: 0.6rem;
+}
 
-  @media (max-width: 1024px) {
+.community-name {
+    font-size: 1.25rem;
+}
+
+.community-role {
+    font-size: 0.95rem;
+    color: var(--accent);
+}
+
+.community-duration {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.community-description {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+.community-description p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+@media (max-width: 720px) {
     .community-card {
-      width: 80%; /* Reduce card width for better fit on smaller screens */
-      margin-left: 0;
+        grid-template-columns: 1fr;
+        text-align: center;
     }
-  }
-  
-  
-  @media (max-width: 768px) {
-    .community-card {
-      width: 100%;
-      flex-direction: column; /* Stack elements vertically on small screens */
-      align-items: center;
-      padding: 15px;
-    }
-  
+
     .community-logo {
-      margin-bottom: 15px;
-      width: 60px; /* Reduce logo size for small screens */
-      height: 60px;
+        margin: 0 auto;
     }
-  
-    .community-info {
-      text-align: center;
-    }
-  }
+}
   

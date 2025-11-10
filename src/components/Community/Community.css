@@ -1,22 +1,32 @@
-  .community-section {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    max-width: 85%; /* Ensure that the section doesn't stretch too wide */
-    margin: 100px auto;
-  }
-  
-  .community-cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; /* Align cards with equal space */
-    /* gap: 20px; */
-  }
-  
+.community-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
 
+.community-header {
+  max-width: 640px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
 
-  @media(max-width:1024px) {
-    .community-section {
-        max-width: 90%;
-    }
+.community-header h2 {
+  font-size: 2.2rem;
+}
+
+.community-header p {
+  color: var(--text-secondary);
+}
+
+.community-cards {
+  display: grid;
+  gap: 1.4rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+@media (max-width: 520px) {
+  .community-header h2 {
+    font-size: 2rem;
   }
+}

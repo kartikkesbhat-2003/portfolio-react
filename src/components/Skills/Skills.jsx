@@ -45,14 +45,15 @@ const skills = [
   { name: 'Windows', icon: <FaWindows className='icon' /> },
 ];
 
-export const Skills = ({ logo, communityName, role, duration, description }) => {
-
+export const Skills = () => {
   return (
-    <div className="skills-carousel-section">
-      <h2 className="skills-carousel-heading">
-        💻 <span>Skills</span> 🚀
-      </h2>
-      <div className="skills-carousel">
+    <section className="skills-section" id='skills'>
+      <div className='skills-header'>
+        <span className='eyebrow'>Skills &amp; Expertise</span>
+        <h2>Tools that shape my workflow</h2>
+        <p>From shipping responsive interfaces to managing full-stack deployments, these are the stacks I reach for every day.</p>
+      </div>
+      <div className="skills-grid">
         {skills.map((skill, index) => (
           <div className="skill-card" key={index}>
             <div className="skill-icon">{skill.icon}</div>
@@ -60,6 +61,6 @@ export const Skills = ({ logo, communityName, role, duration, description }) => 
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };

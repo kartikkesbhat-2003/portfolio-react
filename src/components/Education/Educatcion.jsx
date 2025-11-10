@@ -32,7 +32,6 @@ export const Education = () => {
       <div className="education-container">
         {educationData.map((item, index) => (
           <div key={index} className="education-card">
-            <div className='dot'></div>
             <h3 className="education-degree">{item.degree}</h3>
             <p className="education-institution">{item.institution}</p>
             <p className="education-year">{item.year}</p>

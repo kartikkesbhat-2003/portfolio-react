@@ -3,8 +3,8 @@ import profile from '../../assets/kartik.jpg'
 import './About.css'
 
 export const About = () => {
-  return (
-    <div className='about' id='about'>
+    return (
+        <section className='about' id='about'>
         <div className='about-content'>
             <h2 className='about-heading'>⚡ About Me</h2>
             <p className='about-paragraph'>
@@ -18,9 +18,9 @@ export const About = () => {
             </p>
         </div>
         <div className='about-image-container'>
-            <img src={profile} alt="Abdul Rahman's Profile" className='about-image'/>
+            <img src={profile} alt="Kartik Kesbhat" className='about-image'/>
         </div>
-    </div>
+    </section>
 
   )
 }

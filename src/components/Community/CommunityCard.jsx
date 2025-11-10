@@ -14,11 +14,11 @@ export const CommunityCard = ({ logo, communityName, role, duration, description
                 <h3 className="community-name">{communityName}</h3>
                 <p className="community-role">{role}</p>
                 <p className="community-duration">{duration}</p>
-                <ul className="community-description">
+                <div className="community-description">
                     {descriptionPoints.map((point, index) => (
                         <p key={index}>{point}</p>
                     ))}
-                </ul>
+                </div>
             </div>
         </div>
     );

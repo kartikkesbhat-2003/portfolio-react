@@ -33,13 +33,17 @@ const communityData = [
 
 export const Community = () => {
     return (
-        <div className="community-section">
-          <h2 className="community-section-heading">🌍 Communities I Am Part Of</h2>
+        <section className="community-section" id='community'>
+          <div className='community-header'>
+            <span className='eyebrow'>Community Impact</span>
+            <h2>Building together with inspiring teams</h2>
+            <p>Collaborating with mission-driven organisations to nurture creativity, leadership, and real-world change.</p>
+          </div>
           <div className="community-cards">
             {communityData.map((community, index) => (
               <CommunityCard key={index} {...community} />
             ))}
           </div>
-        </div>
+        </section>
       );
 };

@@ -16,14 +16,16 @@ export const ProjectCard = ({ image, name, description, techStack, demo }) => {
 
               <div className='project-title'>
                 <h2>{name}</h2>
-                <a href={demo} className="external-link" target="_blank" rel="noopener noreferrer">
-                  <FaExternalLinkAlt className='project-title' />
-                </a>
+                {demo && (
+                  <a href={demo} className="external-link" target="_blank" rel="noopener noreferrer">
+                    <FaExternalLinkAlt className='external-icon' />
+                  </a>
+                )}
               </div>
               
               <div className="tags">
                 {techStack.map((tech, index) => (
-                  <span key={index} className={`tag ${tech.toLowerCase()}`}>
+                  <span key={index} className="tag">
                     {tech}
                   </span>
                 ))}
