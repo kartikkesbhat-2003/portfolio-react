@@ -9,6 +9,7 @@ import project_5 from '../../assets/projects/project_5.png';
 import project_6 from '../../assets/projects/project_6.png';
 import project_7 from '../../assets/projects/project_7.png';
 import project_8 from '../../assets/projects/project_8.png';
+import project_9 from '../../assets/projects/project_9.png';
 
 export const Projects = () => {
   const projects = [
@@ -18,6 +19,13 @@ export const Projects = () => {
       description: 'A portfolio website showcasing projects, skills, and experience.',
       techStack: ['React', 'JavaScript', 'Node', 'HTML', 'CSS'],
       demo: 'https://kkesbhat.netlify.app/',
+    },
+    {
+      image: project_9,
+      name: 'Collex - Campus Marketplace',
+      description: 'A MERN-based e-commerce platform designed for college students.',
+      techStack: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'JWT Authentication',],
+      demo: 'https://collex.app/',
     },
     {
       image: project_4,
