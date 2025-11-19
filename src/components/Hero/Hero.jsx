@@ -1,6 +1,6 @@
 import React from 'react'
 import './Hero.css'
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaFileAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { Link } from 'react-router-dom'
 import { SocialBtn } from '../Common/SocialBtn'
@@ -33,6 +33,7 @@ export const Hero = () => {
                         <SocialBtn link="https://github.com/kartikkesbhat-2003" icon={FaGithub} text="Github" />
                         <SocialBtn link="https://www.linkedin.com/in/kartik-kesbhat/" icon={FaLinkedin} text="LinkedIn" />
                         <SocialBtn link="mailto:kkesbhat1601@gmail.com" icon={MdEmail} text="Email" />
+                        <SocialBtn link="https://drive.google.com/file/d/1y4-Mmw7iuHHigC0dqJZyVuB7lsIqkHhp/view?usp=sharing" icon={FaFileAlt} text="Resume" />
                     </div>
                 </div>
             </div>
