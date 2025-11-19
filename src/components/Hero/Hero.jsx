@@ -28,12 +28,11 @@ export const Hero = () => {
                 </div>
 
                 <div className='hero-actions'>
-                    <Link className='primary-cta' to='mailto:kkesbhat1601@gmail.com'>Say Hello! 🔥</Link>
+                    <Link className='primary-cta' to='https://drive.google.com/file/d/1y4-Mmw7iuHHigC0dqJZyVuB7lsIqkHhp/view?usp=sharing' target="_blank" rel="noopener noreferrer">View Resume 🔥</Link>
                     <div className='social-links'>
                         <SocialBtn link="https://github.com/kartikkesbhat-2003" icon={FaGithub} text="Github" />
                         <SocialBtn link="https://www.linkedin.com/in/kartik-kesbhat/" icon={FaLinkedin} text="LinkedIn" />
                         <SocialBtn link="mailto:kkesbhat1601@gmail.com" icon={MdEmail} text="Email" />
-                        <SocialBtn link="https://drive.google.com/file/d/1y4-Mmw7iuHHigC0dqJZyVuB7lsIqkHhp/view?usp=sharing" icon={FaFileAlt} text="Resume" />
                     </div>
                 </div>
             </div>
